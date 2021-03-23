@@ -1,4 +1,5 @@
 module.exports = {
+    "parser":"babel-eslint",
     "env": {
         "browser": true,
         "es2021": true,
@@ -12,9 +13,10 @@ module.exports = {
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true,
-            "modules": true
+            "modules": true,
+            "experimentalObjectRestSpread": true
         },
-        "ecmaVersion": 12,
+        "ecmaVersion": 2020,
         "sourceType": "module"
     },
     "plugins": [

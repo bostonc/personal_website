@@ -1,9 +1,9 @@
 h1 {
-  margin: min(10vh, 10px);
+  margin: min(10vmin, 10px);
 }
 
 h2 {
-  margin-top: min(10vh, 10px);
+  margin-top: min(10vmin, 10px);
 }
 
 .App {
@@ -52,16 +52,16 @@ h2 {
 }
 
 .ContentBox {
-  padding-top: min(20%, 200px);
+  padding-top: min(5vh);
 }
 
 .NavBar {
-  padding-bottom: min(10vh, 10px);
+  padding-bottom: min(3vh);
 }
 
 .NavButton {
   font-family: 'Raleway', 'Consolas';
-  font-size: calc(15px + 1.2vw);
+  font-size: calc(15px + 1.2vmin);
   cursor: pointer;
   background-color: transparent;
   border-radius: 1px;
@@ -119,11 +119,25 @@ h2 {
 
 .LetsConnect {
   font-style: italic;
-  font-size: calc(9px + 1vw);
+  font-size: calc(9px + 1vmin);
   margin-bottom: 5px;
 }
 
 .ContactDetails {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: calc(9px + 1vw);
+  font-size: calc(9px + 1vmin);
+}
+
+.diagonalBox {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-image: linear-gradient(45deg, #2c2c2c, #292d35, #2c2c2c);
+  transform: skewY(-4deg);
+}
+
+.diagonalContent { 	
+	max-width: 50em;
+  margin: 0 auto; 
+  padding: 5px;
+  transform: skewY(6deg);
 }
