@@ -1,0 +1,129 @@
+h1 {
+  margin: min(10vh, 10px);
+}
+
+h2 {
+  margin-top: min(10vh, 10px);
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #292d35;
+  overflow: hidden;
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: max(5vmin, 20px);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.AttributionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContentBox {
+  padding-top: min(20%, 200px);
+}
+
+.NavBar {
+  padding-bottom: min(10vh, 10px);
+}
+
+.NavButton {
+  font-family: 'Raleway', 'Consolas';
+  font-size: calc(15px + 1.2vw);
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 1px;
+  border-color: white;
+  border-width: 1px;
+  outline: none;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+  position: relative;
+  width: clamp(100px, 15%, 200px);
+  height: min(8vh, 12px + 7vw);
+  transition: 1s ease-in-out;
+}
+
+.NavButton:hover {
+  background-color: #121418;
+  
+}
+
+.ButtonText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.border {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgb(236, 250, 255);
+  stroke-width: 1;
+  stroke-dasharray: 100 550;
+  stroke-dashoffset: 100;
+  transition: 1s ease-in-out;
+  z-index: 1;
+}
+
+.border:hover {
+  stroke-dashoffset: -600;
+  stroke-dasharray: 700;
+}
+
+.ContactInfo {
+  margin-bottom: 5vh;
+}
+
+.LetsConnect {
+  font-style: italic;
+  font-size: calc(9px + 1vw);
+  margin-bottom: 5px;
+}
+
+.ContactDetails {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(9px + 1vw);
+}
