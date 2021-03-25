@@ -165,7 +165,7 @@ h2 {
 }
 
 /* Mobile Formatting */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 412px) {
   .AboutMe {
     padding-left: 2vw;
     padding-right: 2vw;
