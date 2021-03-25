@@ -69,7 +69,8 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: calc(9px + 0.5vmin);
   text-align: justify;
-  text-justify: distribute
+  text-justify: distribute;
+  color: #dbdbdb;
 }
 
 .NavBar {
@@ -146,6 +147,7 @@ h2 {
 .ContactDetails {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: calc(9px + 1vmin);
+  color: #dbdbdb;
 }
 
 .diagonalBox {
