@@ -4,7 +4,6 @@ import logo from './logo.svg';
 import './App.css';
 
 process.title = "myReactApp";
-
 class App extends Component {
   componentDidMount() {
     document.title = "chrisboston.info";
@@ -18,11 +17,26 @@ class App extends Component {
             <h1>Chris Boston</h1>
             <h2>Software Engineer</h2>
           </header>
+          <AboutMe/>
           <NavBar/>
           <ContactInfo/>
           <Attribution/>
           <DiagonalPlayground/>
         </div>  
+      </div>
+    );
+  }
+}
+
+class AboutMe extends Component {
+  render() {
+    return (
+      <div className="AboutMe">
+        <p>
+          {`
+            Hi, I'm Chris. If you're here, then you've probably found me interesting enough to at least consider working with, so thanks for that. Below you will find links to my various professional presences around the web, as well as a résumé available for download. If you're here to collaborate, send me an email at the address provided. Cheers!
+          `}
+        </p>
       </div>
     );
   }
