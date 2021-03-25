@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { React, Component } from 'react';
 import logo from './logo.svg';
-import resume from './Chris_Boston_Full_Stack_Resume.pdf';
 import './App.css';
 
 process.title = "myReactApp";
@@ -65,7 +64,7 @@ class NavBar extends Component {
         <NavButton text="LinkedIn" link="https://www.linkedin.com/in/bostonchrisb/"/>
         <NavButton text="AngelList" link="https://angel.co/bostonchrisb"/>
         <NavButton text="Twitter" link="https://twitter.com/bostonc322"/>
-        <NavButton text="Résumé" link={resume} download={"Chris_Boston_Resume.pdf"}/>
+        <NavButton text="Résumé" link="./Chris_Boston_Full_Stack_Resume.pdf" download="Chris_Boston_Resume.pdf"/>
       </div>
     );
   }
