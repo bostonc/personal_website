@@ -65,7 +65,7 @@ class NavBar extends Component {
         <NavButton text="LinkedIn" link="https://www.linkedin.com/in/bostonchrisb/"/>
         <NavButton text="AngelList" link="https://angel.co/bostonchrisb"/>
         <NavButton text="Twitter" link="https://twitter.com/bostonc322"/>
-        <NavButton text="Résumé" link={ resume }/>
+        <NavButton text="Résumé" link={resume} download={"Chris_Boston_Resume.pdf"}/>
       </div>
     );
   }
@@ -79,6 +79,7 @@ class NavButton extends Component {
           href={this.props.link}
           rel="noreferrer"
           target="_blank"
+          download={this.props.download}
         >
           <button className="NavButton">
             <svg viewBox="0 0 100 60" 
@@ -89,7 +90,7 @@ class NavButton extends Component {
                 vectorEffect="non-scaling-stroke"
                 className="hl-line"/>
             </svg>
-            <span className="ButtonText">{this.props.text}</span>
+            <span className="ButtonText">{this.props.text}</span>  
           </button>
         </a>
       </span>
