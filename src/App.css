@@ -130,8 +130,8 @@ h2 {
 }
 
 .border:hover {
-  stroke-dashoffset: -600;
   stroke-dasharray: 700;
+  stroke-dashoffset: -600;
 }
 
 .ContactInfo {
@@ -181,5 +181,12 @@ h2 {
   .LetsConnect {
     margin-top: 1vh;
   }
-  
+  .border {
+    stroke-dasharray: 100 720;
+    stroke-dashoffset: 100;
+  }
+  .border:hover {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: -720;
+  }
 }
