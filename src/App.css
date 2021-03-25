@@ -52,11 +52,11 @@ h2 {
 }
 
 .ContentBox {
-  padding-top: min(5vh);
+  padding-top: 5vh;
 }
 
 .NavBar {
-  padding-bottom: min(3vh);
+  padding-bottom: 3vh;
 }
 
 .NavButton {
@@ -75,8 +75,8 @@ h2 {
   margin-bottom: 5px;
   padding: 0;
   position: relative;
-  width: clamp(100px, 15%, 200px);
-  height: min(8vh, 12px + 7vw);
+  width: clamp(150px, 15%, 200px);
+  height: min(8vh, 12px + 7vmin);
   transition: 1s ease-in-out;
 }
 
@@ -131,7 +131,7 @@ h2 {
 .diagonalBox {
   margin-top: 2vh;
   margin-bottom: 2vh;
-  background-image: linear-gradient(45deg, #2c2c2c, #292d35, #2c2c2c);
+  background-image: linear-gradient(45deg, #242424, #232529, #2c2c2c);
   transform: skewY(-4deg);
 }
 
