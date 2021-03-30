@@ -77,7 +77,25 @@ h2 {
   padding-left: max(10vw, 2px);
   padding-right: max(10vw, 2px);
   padding-bottom: 3vh;
-  
+
+  /*
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: calc(400px - 80vw/2);
+  min-height: 100px;*/
+}
+
+.ButtonFrame {
+  width: clamp(100px, 20vmin, 200px);
+  height: min(8vh, 13px + 7vmin);
+  padding-top: 20px;
+}
+
+.ButtonFrame a {
+  width: inherit;
+  height: inherit;
 }
 
 .NavButton {
@@ -94,16 +112,14 @@ h2 {
   margin-right: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
-  padding: 0;
   position: relative;
-  width: clamp(100px, 18%, 200px);
-  height: min(8vh, 13px + 7vmin);
+  width: inherit;
+  height: inherit;
   transition: 1s ease-in-out;
 }
 
 .NavButton:hover {
   background-color: #121418;
-  
 }
 
 .ButtonText {
@@ -164,8 +180,25 @@ h2 {
   transform: skewY(6deg);
 }
 
+@media screen 
+  and (min-width: 1250px) {
+  .NavBar {
+    padding: 3px;
+  }
+}
+
+@media screen
+  and (min-width: 1000px) 
+  and (max-width: 1249px) {
+  .NavBar {
+    padding-left: 18vw;
+    padding-right: 18vw;
+  }
+}
+
 /* Mobile Formatting */
-@media screen and (max-width: 412px) {
+@media screen 
+  and (max-width: 412px) {
   .AboutMe {
     padding-left: 2vw;
     padding-right: 2vw;

@@ -34,7 +34,7 @@ class AboutMe extends Component {
       <div className="AboutMe">
         <p>
           {`
-            Hi, I'm Chris. If you're here, then you've probably found me interesting enough to at least consider working with, so thanks for that. Below you will find links to my various professional presences around the web, as well as a résumé available for download. If you're here to collaborate, send me an email at the address provided. Cheers!
+            Hi, I'm Chris. If you're here, then you've probably found me interesting enough to at least consider working with, so thanks for that. Below you will find links to my various profiles around the web, as well as a résumé available for download. If you're here to collaborate, send me an email at the address provided. Cheers!
           `}
         </p>
       </div>
@@ -77,6 +77,7 @@ class NavBar extends Component {
         <NavButton text="Github" link="https://github.com/bostonc"/>
         <NavButton text="LinkedIn" link="https://www.linkedin.com/in/bostonchrisb/"/>
         <NavButton text="AngelList" link="https://angel.co/bostonchrisb"/>
+        <NavButton text="Arena" link="https://app.arena.run/hub/arena/profile-v2/chrisboston/"/>
         <NavButton text="Twitter" link="https://twitter.com/bostonc322"/>
         <NavButton text="Résumé" link="./Chris_Boston_Full_Stack_Resume.pdf" download="Chris_Boston_Resume.pdf"/>
       </div>
@@ -87,7 +88,7 @@ class NavBar extends Component {
 class NavButton extends Component {
   render() {
     return (
-      <span>
+      <span className="ButtonFrame">
         <a 
           href={this.props.link}
           rel="noreferrer"
