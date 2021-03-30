@@ -12,7 +12,6 @@ class App extends Component {
     return (
       <div className="App">
         <div className="ContentBox">
-          <DiagonalPlayground/>
           <header className="App-header">
             <h1>Chris Boston</h1>
             <h2>Software Engineer</h2>
@@ -21,7 +20,6 @@ class App extends Component {
           <NavBar/>
           <ContactInfo/>
           <Attribution/>
-          <DiagonalPlayground/>
         </div>  
       </div>
     );
@@ -112,7 +110,7 @@ class NavButton extends Component {
   }
 }
 
-class DiagonalPlayground extends Component {
+/*class DiagonalPlayground extends Component {
   render() {
     return (
       <div className="diagonalBox">
@@ -122,7 +120,7 @@ class DiagonalPlayground extends Component {
       </div>
     );
   }
-}
+}*/
 
 export default App;
 

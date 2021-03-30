@@ -76,15 +76,7 @@ h2 {
 .NavBar {
   padding-left: max(10vw, 2px);
   padding-right: max(10vw, 2px);
-  padding-bottom: 3vh;
-
-  /*
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  height: calc(400px - 80vw/2);
-  min-height: 100px;*/
+  padding-bottom: 1vh;
 }
 
 .ButtonFrame {
@@ -158,6 +150,7 @@ h2 {
   font-style: italic;
   font-size: calc(9px + 1vmin);
   margin-bottom: 5px;
+  margin-top: 2vh;
 }
 
 .ContactDetails {
@@ -180,10 +173,13 @@ h2 {
   transform: skewY(6deg);
 }
 
+/* Formatting to handle NavBar resizing */
+/* Forces equal row lengths. */
 @media screen 
   and (min-width: 1250px) {
   .NavBar {
-    padding: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 }
 
