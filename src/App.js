@@ -12,11 +12,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="ContentBox">
-          <header className="App-header">
-            <h1>Chris Boston</h1>
-            <h2>Software Engineer</h2>
-          </header>
-          <AboutMe/>
+          <Header/>
+          <AboutMeSection/>
           <NavBar/>
           <ContactInfo/>
           <Attribution/>
@@ -26,10 +23,30 @@ class App extends Component {
   }
 }
 
-class AboutMe extends Component {
+const Header = () => {
+  return (      
+    <header className="NameAndTitle">
+      <h1>Chris Boston</h1>
+      <h2>Software Engineer</h2>
+    </header>
+  );
+};
+
+class AboutMeSection extends Component {
   render() {
     return (
-      <div className="AboutMe">
+      <div className="AboutMeSection">
+        <img className='ProfilePic' src='./chrisboston.png'/>
+        <AboutMeText/>
+      </div>
+    );
+  }
+}
+
+class AboutMeText extends Component {
+  render() {
+    return (
+      <div className="AboutMeText">
         <p>
           {`
             Hi, I'm Chris. If you're here, then you've probably found me interesting enough to at least consider working with, so thanks for that. Below you will find links to my various profiles around the web, as well as a résumé available for download. If you're here to collaborate, send me an email at the address provided. Cheers!
