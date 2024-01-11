@@ -49,7 +49,7 @@ class AboutMeText extends Component {
       <div className="AboutMeText">
         <p>
           {`
-            Hi, I'm Chris. If you're here, then you've probably found me interesting enough to at least consider working with, so thanks for that. Below you will find links to my various profiles around the web, as well as a résumé available for download. If you're here to collaborate, send me an email at the address provided. Cheers!
+            Hi, I'm Chris. If you're here, then you've probably found me interesting enough to at least consider working with, so thanks for that. Below you will find links to my various profiles around the web, as well as a résumé available for download. If you're here to collaborate, send me an email at the address provided. Let's build something together!
           `}
         </p>
       </div>
@@ -91,9 +91,9 @@ class NavBar extends Component {
       <div className="NavBar">
         <NavButton text="Github" link="https://github.com/bostonc"/>
         <NavButton text="LinkedIn" link="https://www.linkedin.com/in/bostonchrisb/"/>
-        <NavButton text="AngelList" link="https://angel.co/bostonchrisb"/>
-        <NavButton text="Arena" link="https://app.arena.run/hub/arena/profile-v2/chrisboston/"/>
-        <NavButton text="Twitter" link="https://twitter.com/bostonc322"/>
+        <NavButton text="Wellfound" link="https://wellfound.com/u/bostonchrisb"/>
+        <NavButton text="Arena" link="https://app.arena.run/hub/arena/profile/chrisboston/"/>
+        <NavButton text="VCF" link="./ChrisBostonContact.vcf"/>
         <NavButton text="Résumé" link="./Chris_Boston_Full_Stack_Resume.pdf" download="Chris_Boston_Resume.pdf"/>
       </div>
     );
