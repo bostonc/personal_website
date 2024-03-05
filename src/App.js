@@ -3,7 +3,7 @@ import { React, Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-process.title = "myReactApp";
+process.title = 'chrisboston';
 class App extends Component {
   componentDidMount() {
     document.title = "chrisboston.info";
